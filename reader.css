@@ -1,0 +1,14 @@
+using System;
+class Reader{
+	
+	static void Main(String[] args)
+	{
+		SqlDataReader reader = harga_barang.ExecuteReader();
+		while(reader.Read())
+		{
+			string namaBarang = (string)reader["nama_barang"];
+			Console.WriteLine(namabarang);
+			Console.ReadLine();
+		}
+	}
+}
